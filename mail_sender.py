@@ -18,7 +18,7 @@ def get_info():
         with sr.Microphone() as source:
             print('listening...')
             listener.adjust_for_ambient_noise(source=source)
-            voice = listener.listen(source, )
+            voice = listener.listen(source,  )
             info = listener.recognize_google(voice) #en-IN
             print(info)
             return info.lower()
